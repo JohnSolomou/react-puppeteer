@@ -3,6 +3,7 @@ import puppeteer from "puppeteer";
 describe("App.js", () => {
   let browser;
   let page;
+  jest.setTimeout(100000);
 
   beforeAll(async () => {
     browser = await puppeteer.launch();
